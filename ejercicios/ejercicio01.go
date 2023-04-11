@@ -9,7 +9,7 @@ func CalculoEjercicioUno(valor string) (int, string) {
 	num, err := strconv.Atoi(valor)
 
 	if err != nil {
-		return 0, err.Error()
+		return 0, "Hubo un error " + err.Error()
 	}
 
 	if num >= 100 {
