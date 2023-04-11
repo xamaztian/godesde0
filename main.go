@@ -1,9 +1,13 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/xamaztian/godesde0/variables"
 )
 
 func main() {
-	variables.MuestroEnteros()
+	estado, texto := variables.ConviertoaTexto(321458)
+	fmt.Println(estado)
+	fmt.Println(texto)
 }
