@@ -1,7 +1,10 @@
 package main
 
-import "github.com/xamaztian/godesde0/ejercicios"
+import (
+	"github.com/xamaztian/godesde0/files"
+)
 
 func main() {
-	ejercicios.GeneraTabla()
+	//files.SumaTabla()
+	files.LeoArchivo()
 }

@@ -7,10 +7,12 @@ import (
 	"strconv"
 )
 
-func GeneraTabla() {
+func GeneraTabla() string {
 	var err error
 	var numero3 int
 	var bl bool
+	var texto string
+
 	bl = true
 	scanner := bufio.NewScanner(os.Stdin)
 	for bl {
@@ -28,7 +30,8 @@ func GeneraTabla() {
 	}
 
 	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d * %d = %d \n", numero3, i, numero3*i)
+		texto += fmt.Sprintf("%d * %d = %d \n", numero3, i, numero3*i)
 	}
 
+	return texto
 }
