@@ -1,10 +1,13 @@
 package main
 
 import (
-	"github.com/xamaztian/godesde0/files"
+	"github.com/xamaztian/godesde0/funciones"
 )
 
 func main() {
 	//files.SumaTabla()
-	files.LeoArchivo()
+	//files.LeoArchivo()
+
+	//funciones.Calculos()
+	funciones.LlamarClosure()
 }
